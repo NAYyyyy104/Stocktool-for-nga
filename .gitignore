@@ -1,0 +1,26 @@
+﻿# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Local runtime data
+cgp-data.json
+cgp-data.backup.json
+market-calendar.db
+data/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc

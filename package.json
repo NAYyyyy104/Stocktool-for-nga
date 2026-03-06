@@ -1,0 +1,26 @@
+{
+  "name": "stock-tool-for-nga",
+  "version": "1.0.0",
+  "description": "股票观察与持仓管理本地桌面工具",
+  "main": "main.js",
+  "scripts": {
+    "dev:web": "vite --host 127.0.0.1 --port 5173",
+    "dev:electron": "node scripts/run-electron.js --dev-url=http://127.0.0.1:5173",
+    "dev": "concurrently -k \"npm run dev:web\" \"wait-on http://127.0.0.1:5173 && npm run dev:electron\"",
+    "build:web": "vite build",
+    "start": "npm run build:web && node scripts/run-electron.js"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.8",
+    "sortablejs": "^1.15.6",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "concurrently": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "vite": "^5.4.11",
+    "wait-on": "^8.0.3"
+  }
+}

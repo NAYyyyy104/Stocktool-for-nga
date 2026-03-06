@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY backend ./backend
+
+EXPOSE 8765
+
+CMD ["python", "backend/server.py"]
